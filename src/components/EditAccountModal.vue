@@ -88,10 +88,8 @@ const onSave = () => {
     }
 
     if (props.account) {
-      // Обновляем существующую учетную запись
       accountsStore.updateAccount(props.account.id, accountData)
     } else {
-      // Добавляем новую учетную запись
       accountsStore.addAccount(accountData)
     }
 
